@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My First Accessible HTML5 Web Page</title>
+
+  <!-- SEO metadata -->
+  <meta name="description" content="A sample HTML5 web page demonstrating semantic structure, accessibility best practices, and SEO basics.">
+  <meta name="keywords" content="HTML5, accessibility, SEO, semantic web, web development assignment">
+  <meta name="author" content="Your Name">
+
+  <!-- Open Graph for better previews -->
+  <meta property="og:title" content="My First Accessible HTML5 Web Page">
+  <meta property="og:description" content="An example assignment web page showing HTML5 structure, accessibility features, and SEO best practices.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <h1>Accessible & SEO-Friendly Web Page</h1>
+    <p>A simple project using HTML5 semantic tags</p>
+
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="maincontent" role="main">
+    <article>
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About This Page</h2>
+        <p>This page was created as part of an HTML5 assignment. It demonstrates semantic structure, accessibility features, and SEO-friendly content organization. Using proper landmarks and headings ensures that both humans and search engines can navigate the content effectively.</p>
+      </section>
+
+      <section id="features" aria-labelledby="features-heading">
+        <h2 id="features-heading">Key Features</h2>
+        <ul>
+          <li><strong>Semantic structure:</strong> Proper use of <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
+          <li><strong>Accessibility:</strong> Skip link, ARIA attributes, and clear heading hierarchy.</li>
+          <li><strong>SEO basics:</strong> Metadata, descriptive headings, and human-readable content.</li>
+        </ul>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>For questions about this project, please email <a href="mailto:student@example.com">drolalakan.ayodele@gmail.com</a>.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Ayodele Odugbile. Created for HTML5 Accessibility & SEO Assignment.</p>
+  </footer>
+</body>
+</html>
