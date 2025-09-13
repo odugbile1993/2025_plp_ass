@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML5 assignment demonstrating lists, tables, media, and advanced forms with validation.">
+  <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>HTML5 Content & Forms Assignment</h1>
+    <p>This page demonstrates lists, tables, embedded media, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <!-- SECTION 1: LISTS -->
+  <section>
+    <h2>Top 3 Web Development Skills</h2>
+    <ul>
+      <li>HTML5 and Semantic Structure</li>
+      <li>CSS3 for Styling</li>
+      <li>JavaScript for Interactivity</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 2: TABLE -->
+  <section>
+    <h2>Student Scores Table</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aisha</td>
+          <td>Math</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Science</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>English</td>
+          <td>88</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 3: MEDIA -->
+  <section>
+    <h2>Media Example</h2>
+    <p>Here is an embedded image and audio sample:</p>
+    <img src="https://via.placeholder.com/300x150" alt="Sample Placeholder Image">
+    <br><br>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- SECTION 4: FORM -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter first name" required minlength="2">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter valid email" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <br>
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,12}" placeholder="5-12 alphanumeric">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Min 6 characters">
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select--</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select>
+      </fieldset>
+
+      <br>
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label>
+          <input type="checkbox" name="newsletter" checked>
+          Subscribe to newsletter
+        </label>
+        <br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </fieldset>
+
+      <br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment | Designed for Accessibility & SEO</p>
+  </footer>
+
+</body>
+</html>
